@@ -275,7 +275,7 @@ class ActionMailer::ARSendmail
   #
   def self.load_rails_environment(base_path)
     Dir.chdir(base_path) do
-      require 'config/environment'
+      require './config/environment'
       require 'action_mailer/ar_mailer'
     end
   rescue LoadError
